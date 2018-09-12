@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hexo-Installation guide For Windows]]></title>
+    <url>%2F2018%2F09%2F12%2FHexo-Installation-guide%2F</url>
+    <content type="text"><![CDATA[被腾讯微博一折腾，对这家公司已经弃疗了。最近一直在寻找一个靠谱的技术博客文档，然后自己就折腾出这么个东西，花了小一天。 环境准备Git、Node.jsGit在网上看了下，Github支持静态网页的搭建，自己发现的缺点就是Github私人空间是收费的。这不得不让我把一些私人代码放在Gitlab上。这也就导致了我不得不痛苦的并用两个。我的Hexo是搭建在Github上的 Node.jsNode.js官网下载@todo 暂时不知道这个语言，有空简单了解下。Node.js里面包含环境变量和npm 安装过后可以确认一下git -vnpm -v Hexo的安装使用npm命令安装Hexo，npm install -g hexo-cli虽然这个过程报了不知名的错，直接无视过去也没发生什么问题12345678hhan@18-06-28-01 MINGW64 /c/Hexo$ npm install -g hexo-cliC:\Users\hhan\AppData\Roaming\npm\hexo -&gt; C:\Users\hhan\AppData\Roaming\npm\node_modules\hexo-cli\bin\hexonpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\hexo-cli\node_modules\fsevents):npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)+ hexo-cli@1.1.0updated 1 package in 11.907s 初始化博客最开始漏掉了这一块，我看只有一个文件，还以为出什么问题了呢。。。hexo init hexo #初始化博客到”hexo”文件夹cd hexonpm install 然后基本大功告成，就这么简单，简单测试一下：hexo new test_my_sitehexo ghexo s就可以访问啦~http://localhost:4000 常用命令：现在来介绍常用的Hexo 命令 npm install hexo -g #安装Hexonpm update hexo -g #升级hexo init #初始化博客 命令简写hexo n “我的博客” == hexo new “我的博客” #新建文章hexo g == hexo generate #生成hexo s == hexo server #启动服务预览hexo d == hexo deploy #部署 hexo server #Hexo会监视文件变动并自动更新，无须重启服务器hexo server -s #静态模式hexo server -p 5000 #更改端口hexo server -i 192.168.1.1 #自定义 IPhexo clean #清除缓存，若是网页正常情况下可以忽略这条命令]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Installation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F09%2F11%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
